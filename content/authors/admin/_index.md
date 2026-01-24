@@ -19,7 +19,7 @@ superuser: true
 highlight_name: true
 
 # Role/position/tagline
-role: M.S. Student
+role: M.S. Student in Electrical Engineering
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
