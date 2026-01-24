@@ -1,20 +1,16 @@
 ---
 # Display name
-title: Alex Johnson
+title: Wei Fu
 
 # Name pronunciation (optional)
 name_pronunciation: ''
 
 # Full name (for SEO)
-first_name: Alex
-last_name: Johnson
+first_name: Wei
+last_name: Fu
 
 # Pronouns (optional)
 pronouns: he/him
-
-# Status emoji
-status:
-  icon: 🚀
 
 # Is this the primary user of the site?
 superuser: true
@@ -27,7 +23,7 @@ role: Senior AI Research Scientist
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
-  - name: Meta AI
+  - name: USC
     url: https://ai.meta.com/
 
 # Social network links
