@@ -47,52 +47,42 @@ interests:
   - Large Language Models
   - Computer Vision
   - Reinforcement Learning
-  - AI Ethics
+  - Machine Learning
 
 education:
-  - area: PhD Computer Science (AI Focus)
-    institution: Stanford University
-    date_start: 2015-09-01
-    date_end: 2019-06-30
-    summary: |
-      Thesis on _Scaling Laws for Neural Language Models_. Supervised by Prof. Andrew Ng. Published 5 papers in NeurIPS and ICML, with 2 best paper awards.
-    button:
-      text: 'Read Thesis'
-      url: 'https://example.com/thesis.pdf'
-  - area: MS Computer Science
-    institution: Carnegie Mellon University
-    date_start: 2013-09-01
-    date_end: 2015-05-31
+  - area: MS Electrical Engineering
+    institution: University of Southern California
+    date_start: 2025-08-25
+    date_end: 2027-05-31
     summary: |
       GPA: 4.0/4.0
 
       Specialized in machine learning and robotics.
-  - area: BS Computer Science
-    institution: MIT
-    date_start: 2009-09-01
-    date_end: 2013-05-31
+  - area: BEng. Automation
+    institution: 
+    date_start: 2021-09-01
+    date_end: 2025-06-18
     summary: |
       GPA: 3.9/4.0
 
-      Minored in Mathematics. President of AI Club.
-
+      
 work:
-  - position: Senior AI Research Scientist
-    company_name: Meta AI
-    company_url: 'https://ai.meta.com/'
+  - position: 
+    company_name: 
+    company_url: 'https://xxxxxx'
     company_logo: ''
-    date_start: 2020-01-01
+    date_start: 
     date_end: ''
-    summary: |2-
-      Leading research on multimodal AI systems. Contributed to Llama 2 and other open-source models. 50+ citations in 3 years.
-  - position: AI Research Intern
-    company_name: OpenAI
-    company_url: 'https://openai.com/'
-    company_logo: ''
-    date_start: 2019-06-01
-    date_end: 2019-12-31
     summary: |
-      Worked on GPT-3 scaling. Co-authored paper on prompt engineering.
+      
+  - position: Research Intern
+    company_name: 
+    company_url: 'https://xxxxxx/'
+    company_logo: ''
+    date_start: 
+    date_end: 
+    summary: |
+      
 
 # Skills
 # Add your own SVG icons to `assets/media/icons/`
