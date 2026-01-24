@@ -19,12 +19,12 @@ superuser: true
 highlight_name: true
 
 # Role/position/tagline
-role: Senior AI Research Scientist
+role: M.S. Student
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
   - name: USC
-    url: https://ai.meta.com/
+    url: https://www.usc.edu/
 
 # Social network links
 # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
