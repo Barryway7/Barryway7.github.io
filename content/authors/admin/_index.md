@@ -152,4 +152,4 @@ awards:
       
 ---
 
-Alex Johnson is a Senior AI Research Scientist at Meta AI, where he leads groundbreaking work on large language models and multimodal systems. His research has been published in top conferences like NeurIPS and ICML, with over 10,000 citations. Alex is passionate about pushing the boundaries of AI while ensuring ethical development. Outside of work, he enjoys hiking in the Rockies, building custom PCs, and mentoring the next generation of AI talent.
+I am a Master’s student in Electrical Engineering at the University of Southern California, with research interests in machine learning and data-driven modeling. I have research experience in robust classification and healthcare data analysis and am the author of a peer-reviewed conference paper. I aim to pursue doctoral research on principled and interpretable machine learning methods for real-world systems.
