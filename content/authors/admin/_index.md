@@ -58,12 +58,12 @@ education:
       GPA: 4.0/4.0
 
       Specialized in machine learning and robotics.
-  - area: BEng. Automation
+  - area: BEng Automation
     institution: Northeastern University
     date_start: 2021-09-01
     date_end: 2025-06-18
     summary: |
-      GPA: 3.7/4.0
+       GPA: 3.7/4.0
 
       
 work:
