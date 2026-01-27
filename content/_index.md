@@ -31,14 +31,12 @@ sections:
         shape: circle # Options: circle (default), square, rounded
   - block: markdown
     content:
-      title: '📚 My Research'
+      title: 'My Research'
       subtitle: ''
       text: |-
-        Use this area to speak to your mission. I'm a research scientist in the Moonshot team at DeepMind. I blog about machine learning, deep learning, and moonshots.
-
-        I apply a range of qualitative and quantitative methods to comprehensively investigate the role of science and technology in the economy.
-
-        Please reach out to collaborate 😃
+               My work, ranging from robust healthcare analytics to peer-reviewed methodology, is driven by a single mission: making AI more principled and interpretable.
+               I am preparing for the next step in my academic journey—a PhD focused on creating transparent, data-driven solutions for complex environments.
+               Please reach out to collaborate 
     design:
       columns: '1'
   - block: collection
