@@ -117,10 +117,10 @@ skills:
         icon: book-open
 
 languages:
-  - name: English
+  - name: Chinese
     percent: 100
-  - name: Spanish
-    percent: 50
+  - name: English
+    percent: 90
 
 # Awards.
 #   Add/remove as many awards below as you like.
