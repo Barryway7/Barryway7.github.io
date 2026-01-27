@@ -45,7 +45,6 @@ profiles:
 
 interests:
   - Machine Learning
-  - Computer Vision
   - Reinforcement Learning
   - Control Theory
 
