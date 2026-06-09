@@ -74,7 +74,7 @@ work:
       
   - position: Research Intern
     company_name: 
-    company_url: 'https://xxxxxx/'
+    company_url: '[https://www.usc.edu]'
     company_logo: ''
     date_start: 
     date_end: 
