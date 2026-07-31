@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wei Fu</title>
+<meta name="description" content="Wei Fu — MS student in Electrical Engineering at USC. Research: safe and stable learning-based control, neural operators, physics-informed machine learning, multi-agent systems.">
+<meta name="author" content="Wei Fu">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>W</text></svg>">
+<style>
+  :root {
+    --bg: #ffffff;
+    --text: #1f1f1f;
+    --muted: #5f6368;
+    --link: #14508c;
+    --rule: #e3e3e3;
+    --highlight: #f6f4ee;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #16181c;
+      --text: #dcdfe3;
+      --muted: #9aa0a6;
+      --link: #7fb0e0;
+      --rule: #33373d;
+      --highlight: #1e2126;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: Charter, "Bitstream Charter", "Sitka Text", Cambria, Georgia, serif;
+    font-size: 17px;
+    line-height: 1.55;
+  }
+  .page {
+    max-width: 46rem;
+    margin: 0 auto;
+    padding: 3.5rem 1.5rem 4rem;
+  }
+  a { color: var(--link); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  /* Header */
+  header { display: flex; gap: 2rem; align-items: flex-start; }
+  .intro { flex: 1 1 auto; min-width: 0; }
+  h1 { font-size: 2rem; font-weight: 600; margin: 0 0 0.2rem; letter-spacing: 0.2px; }
+  .tagline { color: var(--muted); margin: 0 0 1rem; }
+  .portrait {
+    flex: 0 0 auto;
+    width: 165px; height: 165px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  .links { margin-top: 1rem; font-size: 0.95rem; }
+  .links a { margin-right: 0.35rem; }
+  .links span.sep { color: var(--rule); margin-right: 0.35rem; }
+
+  /* Sections */
+  h2 {
+    font-size: 1.25rem; font-weight: 600;
+    margin: 2.6rem 0 0.9rem;
+    padding-bottom: 0.3rem;
+    border-bottom: 1px solid var(--rule);
+  }
+  p { margin: 0 0 0.9rem; }
+
+  /* News */
+  .news { list-style: none; margin: 0; padding: 0; }
+  .news li { display: flex; gap: 1.1rem; margin-bottom: 0.45rem; }
+  .news .date { flex: 0 0 5.2rem; color: var(--muted); font-variant-numeric: tabular-nums; }
+
+  /* Publications */
+  .pub { margin-bottom: 1.15rem; }
+  .pub .title { font-weight: 600; }
+  .pub .authors { display: block; }
+  .pub .venue { display: block; font-style: italic; color: var(--muted); }
+  .pub .plinks { font-size: 0.92rem; }
+  .pub .plinks a { margin-right: 0.6rem; }
+  .me { font-weight: 600; }
+
+  /* Experience / education entries */
+  .entry { margin-bottom: 1.05rem; }
+  .entry .head { display: flex; justify-content: space-between; gap: 1rem; align-items: baseline; }
+  .entry .what { font-weight: 600; }
+  .entry .when { color: var(--muted); font-size: 0.92rem; white-space: nowrap; }
+  .entry .where { color: var(--muted); font-size: 0.97rem; }
+  .entry .desc { margin: 0.15rem 0 0; }
+
+  .misc li { margin-bottom: 0.35rem; }
+
+  footer {
+    margin-top: 3.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--rule);
+    color: var(--muted);
+    font-size: 0.88rem;
+  }
+
+  @media (max-width: 620px) {
+    header { flex-direction: column-reverse; align-items: center; }
+    .intro h1, .intro .tagline { text-align: center; }
+    .links { text-align: center; }
+    .portrait { width: 150px; height: 150px; }
+    .news li { flex-direction: column; gap: 0; margin-bottom: 0.7rem; }
+    .news .date { flex-basis: auto; }
+    .entry .head { flex-direction: column; gap: 0; }
+    .entry .when { white-space: normal; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+<header>
+  <div class="intro">
+    <h1>Wei Fu</h1>
+    <p class="tagline">MS Student, Electrical Engineering<br>University of Southern California</p>
+    <p>I am a Master's student at the <a href="https://viterbischool.usc.edu/">USC Viterbi School of Engineering</a>, working with <a href="https://cps.usc.edu/">Prof. Paul Bogdan</a> on risk estimation in multi-agent systems and stability-aware operator learning. Before USC, I received my BEng in Automation from Northeastern University, China.</p>
+    <p>My research interests include safe and stable learning-based control of dynamical systems, neural operators and physics-informed machine learning, multi-agent systems, and optimization. I am currently applying to PhD programs.</p>
+    <div class="links">
+      <a href="mailto:wfu30487@usc.edu">Email</a> <span class="sep">/</span>
+      <a href="uploads/resume.pdf">CV</a> <span class="sep">/</span>
+      <a href="https://scholar.google.com/citations?user=vVaJlGUAAAAJ&amp;hl=en">Google&nbsp;Scholar</a> <span class="sep">/</span>
+      <a href="https://github.com/Barryway7">GitHub</a> <span class="sep">/</span>
+      <a href="https://www.linkedin.com/in/wei-fu-a74aaa379">LinkedIn</a> <span class="sep">/</span>
+      <a href="https://orcid.org/0009-0000-3435-805X">ORCID</a>
+    </div>
+  </div>
+  <img class="portrait" src="img/avatar.jpg" alt="Portrait of Wei Fu">
+</header>
+
+<h2>News</h2>
+<ul class="news">
+  <li><span class="date">Jul 2026</span><span>TF-Risk, on estimating false-consensus risk in multi-agent systems, is under review at AAAI 2027.</span></li>
+  <li><span class="date">Feb 2026</span><span>Joined Prof. Paul Bogdan's group at USC as a graduate researcher.</span></li>
+  <li><span class="date">Aug 2025</span><span>Started my MS in Electrical Engineering at USC.</span></li>
+  <li><span class="date">Jun 2025</span><span>Graduated from Northeastern University with a BEng in Automation.</span></li>
+</ul>
+
+<h2>Publications &amp; Preprints</h2>
+<div class="pub">
+  <span class="title">TF-Risk: Estimating False-Consensus Risk in Multi-Agent Systems with Time-Fractional Dynamics</span>
+  <span class="authors">Gengshuo Liu*, <span class="me">Wei Fu*</span>, Italo Ivo Lima Dias Pinto, Yorie Nakahira, Paul Bogdan &nbsp;<span style="color:var(--muted)">(*equal contribution)</span></span>
+  <span class="venue">Under review, AAAI 2027</span>
+</div>
+<div class="pub">
+  <span class="title">Lyapunov-Inspired Neural Operators for Stable Long-Rollout PDE Prediction</span>
+  <span class="authors">Gengshuo Liu, Shixuan Li, Xiongye Xiao, <span class="me">Wei Fu</span>, Yucheng Zhao, Paul Bogdan</span>
+  <span class="venue">Preprint</span>
+</div>
+<div class="pub">
+  <span class="title">Exploratory Data Analysis and Machine Learning Models for Stroke Prediction</span>
+  <span class="authors"><span class="me">Wei Fu</span></span>
+  <span class="venue">International Conference on Data Analysis and Machine Learning (DAML), 2023</span>
+  <span class="plinks"><a href="https://doi.org/10.5220/0000185700003885">DOI</a></span>
+</div>
+
+<h2>Research Experience</h2>
+<div class="entry">
+  <div class="head"><span class="what">University of Southern California</span><span class="when">Feb 2026 – Present</span></div>
+  <div class="where">Graduate Researcher, advised by Prof. Paul Bogdan</div>
+  <p class="desc">Co-first-authored TF-Risk, a framework for estimating false-consensus risk in multi-agent systems with time-fractional dynamics, in collaboration with Prof. Yorie Nakahira (CMU); designed the risk-estimation pipeline and led the simulation studies. Also contributed to Lyapunov-inspired neural operators that embed stability certificates into operator learning, implementing baselines and long-rollout experiments on benchmark PDEs.</p>
+</div>
+<div class="entry">
+  <div class="head"><span class="what">Digital Twin-Based Product Quality Prediction in Industrial Processes</span><span class="when">Nov 2024 – Jun 2025</span></div>
+  <div class="where">Undergraduate Thesis, Northeastern University — advised by Prof. Minghai Jiao &amp; Chang Liu</div>
+  <p class="desc">Built physics-informed quality-prediction models for cold-rolling and annealing, injecting features from thermodynamic and kinetic models into XGBoost, CatBoost, and TabTransformer; tuned with evolutionary algorithms and built an interactive Unity digital-twin interface.</p>
+</div>
+<div class="entry">
+  <div class="head"><span class="what">Pin-QSSVM: Quadratic-Surface SVM with Pinball Loss</span><span class="when">Jun 2023 – Aug 2024</span></div>
+  <div class="where">Research Assistant, Northeastern University — advised by Asst. Prof. Zheming Gao</div>
+  <p class="desc">Proposed a robust classifier integrating the pinball loss into the quadratic-surface SVM framework, solved via SGD and second-order cone programming; achieved +11% accuracy and +14% F1 over standard QSSVM on noisy and imbalanced benchmarks.</p>
+</div>
+<div class="entry">
+  <div class="head"><span class="what">Intelligent Monitoring System for School-Bullying Detection</span><span class="when">Jan 2022 – Sep 2023</span></div>
+  <div class="where">Team Leader, Northeastern University — advised by Prof. Dongyue Chen</div>
+  <p class="desc">Built a real-time multi-target tracking pipeline (YOLOv5 + DeepSORT) to detect harmful interactions in crowded school environments; deployed across heterogeneous school camera systems with real-time alerts.</p>
+</div>
+<div class="entry">
+  <div class="head"><span class="what">Chongqing Jifeng Geological Exploration Co., Ltd.</span><span class="when">Jun 2022 – Sep 2022</span></div>
+  <div class="where">Data Engineer Intern</div>
+  <p class="desc">Trained random-forest and SVM classifiers for lithology classification on remote-sensing, seismic, and well-log data to support mineral-resource zoning.</p>
+</div>
+
+<h2>Education</h2>
+<div class="entry">
+  <div class="head"><span class="what">University of Southern California</span><span class="when">Aug 2025 – May 2027 (expected)</span></div>
+  <div class="where">MS in Electrical Engineering, Viterbi School of Engineering</div>
+</div>
+<div class="entry">
+  <div class="head"><span class="what">Northeastern University, China</span><span class="when">Sep 2021 – Jun 2025</span></div>
+  <div class="where">BEng in Automation — GPA 87.57/100</div>
+</div>
+
+<h2>Miscellaneous</h2>
+<ul class="misc">
+  <li><b>Awards:</b> Outstanding Student Award, Northeastern University (2023); First Prize, Liaoning Mathematics Competition (2022)</li>
+  <li><b>Programming:</b> Python (PyTorch, scikit-learn), MATLAB/Simulink, C++, Go</li>
+  <li><b>Tools:</b> Docker, EdgeX Foundry, Unity, Git</li>
+</ul>
+
+<footer>
+  © 2026 Wei Fu · Last updated July 2026
+</footer>
+
+</div>
+</body>
+</html>
