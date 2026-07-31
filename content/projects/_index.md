@@ -12,7 +12,7 @@ sections:
   - block: collection
     content:
       title: Selected Projects
-      text: I enjoy making things. Here are a selection of projects that I have worked on over the years.
+      text: A selection of research and engineering projects I have worked on, spanning machine learning, optimization, control, and computer vision.
       filters:
         folders:
           - projects
