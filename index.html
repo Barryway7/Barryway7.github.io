@@ -26,7 +26,7 @@
   header { display: flex; gap: 2rem; align-items: center; }
   .intro { flex: 1; min-width: 0; }
   h1 { font-size: 1.9rem; font-weight: 600; margin: 0 0 0.6rem; }
-  .portrait { width: 140px; height: 140px; object-fit: cover; border-radius: 50%; }
+  .portrait { width: 120px; height: auto; border-radius: 6px; }
   p { margin: 0 0 0.8rem; }
   .links { color: var(--muted); font-size: 0.95rem; }
 
@@ -42,7 +42,7 @@
 
   @media (max-width: 600px) {
     header { flex-direction: column-reverse; align-items: flex-start; gap: 1.2rem; }
-    .portrait { width: 110px; height: 110px; }
+    .portrait { width: 100px; }
     .row { flex-direction: column; gap: 0; margin-bottom: 0.6rem; }
   }
 </style>
