@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Wei Fu</title>
-<meta name="description" content="Wei Fu — MS student in Electrical Engineering at USC. Research: safe and stable learning-based control, neural operators, physics-informed machine learning, multi-agent systems.">
+<meta name="description" content="Wei Fu — MS student in Electrical Engineering at USC. Research: fractional-order dynamics of LLMs and multi-agent LLM systems, neural operators, learning-based control.">
 <meta name="author" content="Wei Fu">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>W</text></svg>">
 <style>
@@ -119,8 +119,8 @@
   <div class="intro">
     <h1>Wei Fu</h1>
     <p class="tagline">MS Student, Electrical Engineering<br>University of Southern California</p>
-    <p>I am a Master's student at the <a href="https://viterbischool.usc.edu/">USC Viterbi School of Engineering</a>, working with <a href="https://cps.usc.edu/">Prof. Paul Bogdan</a> on risk estimation in multi-agent systems and stability-aware operator learning. Before USC, I received my BEng in Automation from Northeastern University, China.</p>
-    <p>My research interests include safe and stable learning-based control of dynamical systems, neural operators and physics-informed machine learning, multi-agent systems, and optimization. I am currently applying to PhD programs.</p>
+    <p>I am a Master's student at the <a href="https://viterbischool.usc.edu/">USC Viterbi School of Engineering</a>, working with <a href="https://cps.usc.edu/">Prof. Paul Bogdan</a> on non-Markovian dynamics of large language models and multi-agent LLM systems. Before USC, I received my BEng in Automation from Northeastern University, China.</p>
+    <p>My research treats LLMs and LLM agents as dynamical systems: fractional-order (non-Markovian) dynamics of hidden states and agent communication, state-space identification and failure prediction for multi-agent LLM systems, and communication protocol design for black-box and white-box agents. I am also interested in structure-preserving learning, neural operators, and learning-based control with uncertainty quantification. I am currently applying to PhD programs.</p>
     <div class="links">
       <a href="mailto:wfu30487@usc.edu">Email</a> <span class="sep">/</span>
       <a href="https://scholar.google.com/citations?user=vVaJlGUAAAAJ&amp;hl=en">Google&nbsp;Scholar</a> <span class="sep">/</span>
@@ -134,7 +134,7 @@
 
 <h2>News</h2>
 <ul class="news">
-  <li><span class="date">Jul 2026</span><span>TF-Risk, on estimating false-consensus risk in multi-agent systems, is under review.</span></li>
+  <li><span class="date">Oct 2026</span><span>Our paper on the fractional dynamics of LLM hidden states, <i>The Dynamics Beneath Language</i>, is under review.</span></li>
   <li><span class="date">Mar 2026</span><span>Completed the full Los Angeles Marathon! 🏃</span></li>
   <li><span class="date">Feb 2026</span><span>Joined Prof. Paul Bogdan's group at USC as a graduate researcher.</span></li>
   <li><span class="date">Aug 2025</span><span>Started my MS in Electrical Engineering at USC.</span></li>
@@ -145,12 +145,17 @@
 <div class="pub">
   <span class="title">TF-Risk: Estimating False-Consensus Risk in Multi-Agent Systems with Time-Fractional Dynamics</span>
   <span class="authors">Gengshuo Liu*, <span class="me">Wei Fu*</span>, Italo Ivo Lima Dias Pinto, Yorie Nakahira, Paul Bogdan &nbsp;<span style="color:var(--muted)">(*equal contribution)</span></span>
+  <span class="venue">Manuscript, 2026</span>
+</div>
+<div class="pub">
+  <span class="title">The Dynamics Beneath Language: A Statistical Physics-Inspired Framework for Analyzing Large Language Models</span>
+  <span class="authors">Gengshuo Liu, Zhuoyuan Wang, Wei Yang, Xiaole Zhang, <span class="me">Wei Fu</span>, Jesse Thomason, Paul Bogdan, Yorie Nakahira</span>
   <span class="venue">Under review</span>
 </div>
 <div class="pub">
   <span class="title">Lyapunov-Inspired Neural Operators for Stable Long-Rollout PDE Prediction</span>
   <span class="authors">Gengshuo Liu, Shixuan Li, Xiongye Xiao, <span class="me">Wei Fu</span>, Yucheng Zhao, Paul Bogdan</span>
-  <span class="venue">Preprint</span>
+  <span class="venue">In preparation</span>
 </div>
 <div class="pub">
   <span class="title">Exploratory Data Analysis and Machine Learning Models for Stroke Prediction</span>
@@ -163,7 +168,9 @@
 <div class="entry">
   <div class="head"><span class="what">University of Southern California</span><span class="when">Feb 2026 – Present</span></div>
   <div class="where">Graduate Researcher, advised by Prof. Paul Bogdan</div>
-  <p class="desc">Co-first-authored TF-Risk, a framework for estimating false-consensus risk in multi-agent systems with time-fractional dynamics, in collaboration with Prof. Yorie Nakahira (CMU); designed the risk-estimation pipeline and led the simulation studies. Also contributed to Lyapunov-inspired neural operators that embed stability certificates into operator learning, implementing baselines and long-rollout experiments on benchmark PDEs.</p>
+  <p class="desc"><b>Predicting false consensus in LLM multi-agent systems.</b> Co-first author of TF-Risk (with Prof. Yorie Nakahira, CMU), which forecasts confident-but-incorrect majority decisions before commitment by modeling report arrivals as a time-fractional renewal process, using only early report counts. Ran the orchestrator–worker evaluations (Qwen3-4B, Phi-4-mini; MMLU, ARC-Challenge) and the decision-time forecasting experiments: best AUROC and AUARC in all four settings, and 74% lower forecast error than the strongest temporal baseline.</p>
+  <p class="desc"><b>Fractional dynamics of LLM hidden states.</b> Led the watermark-detection study, testing whether fractional orders estimated from a single hidden-state trajectory register a decoding-time intervention (Unigram watermarking on Mistral-7B and Qwen2.5-7B). Fractional-order features achieved the highest AUROC in all 12 settings (mean 0.72 vs. 0.63 for NLL/entropy baselines). Also contributed to the human-vs-LLM experiments.</p>
+  <p class="desc"><b>Stable neural operators for long-rollout PDE prediction.</b> Ran controlled ablations across FNO, U-Net, multiwavelet, and PINN models on Kuramoto–Sivashinsky and Burgers, showing that IMEX time-splitting is the main source of long-rollout stability.</p>
 </div>
 <div class="entry">
   <div class="head"><span class="what">Digital Twin-Based Product Quality Prediction in Industrial Processes</span><span class="when">Nov 2024 – Jun 2025</span></div>
@@ -182,6 +189,12 @@
   <p class="desc">Trained random-forest and SVM classifiers for lithology classification on remote-sensing, seismic, and well-log data to support mineral-resource zoning.</p>
 </div>
 
+<h2>Teaching</h2>
+<div class="entry">
+  <div class="head"><span class="what">Undergraduate Teaching Assistant, Computer DIY &amp; Maintenance</span><span class="when">Spring 2024</span></div>
+  <div class="where">Northeastern University</div>
+</div>
+
 <h2>Education</h2>
 <div class="entry">
   <div class="head"><span class="what">University of Southern California</span><span class="when">Aug 2025 – May 2027 (expected)</span></div>
@@ -194,14 +207,14 @@
 
 <h2>Miscellaneous</h2>
 <ul class="misc">
-  <li><b>Awards:</b> Outstanding Student Award, Northeastern University (2023); First Prize, Liaoning Mathematics Competition (2022)</li>
-  <li><b>Programming:</b> Python (PyTorch, scikit-learn), MATLAB/Simulink, C++, Go</li>
-  <li><b>Tools:</b> Docker, EdgeX Foundry, Unity, Git</li>
+  <li><b>Awards:</b> First-Class Scholarship, Northeastern University (2023); Outstanding Student Award, Northeastern University (2023); First Prize, Liaoning Mathematics Competition (2022)</li>
+  <li><b>Programming:</b> Python (PyTorch, NumPy/SciPy, scikit-learn, vLLM), MATLAB/Simulink, C++</li>
+  <li><b>Tools:</b> Git, Docker, Linux, Unity</li>
   <li><b>Hardware:</b> <a href="https://github.com/Barryway7/motion-sensing-robotic-arm">Motion-sensing robotic arm</a> — a wearable exoskeleton glove teleoperating a 6-DOF arm in real time (STM32 + MPU6050, 2022)</li>
 </ul>
 
 <footer>
-  © 2026 Wei Fu · Last updated August 2026
+  © 2026 Wei Fu · Last updated October 2026
 </footer>
 
 </div>
