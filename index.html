@@ -89,6 +89,7 @@
   .entry .when { color: var(--muted); font-size: 0.92rem; white-space: nowrap; }
   .entry .where { color: var(--muted); font-size: 0.97rem; }
   .entry .desc { margin: 0.15rem 0 0; }
+  .entry ul.desc { padding-left: 1.2rem; }
 
   .misc li { margin-bottom: 0.35rem; }
 
@@ -120,7 +121,7 @@
     <h1>Wei Fu</h1>
     <p class="tagline">MS Student, Electrical Engineering<br>University of Southern California</p>
     <p>I am a Master's student at the <a href="https://viterbischool.usc.edu/">USC Viterbi School of Engineering</a>, working with <a href="https://cps.usc.edu/">Prof. Paul Bogdan</a> on non-Markovian dynamics of large language models and multi-agent LLM systems. Before USC, I received my BEng in Automation from Northeastern University, China.</p>
-    <p>My research treats LLMs and LLM agents as dynamical systems: fractional-order (non-Markovian) dynamics of hidden states and agent communication, state-space identification and failure prediction for multi-agent LLM systems, and communication protocol design for black-box and white-box agents. I am also interested in structure-preserving learning, neural operators, and learning-based control with uncertainty quantification. I am currently applying to PhD programs.</p>
+    <p>I study LLMs and LLM agents as dynamical systems, with interests in fractional-order dynamics, failure prediction in multi-agent systems, neural operators, and learning-based control. I am currently applying to PhD programs.</p>
     <div class="links">
       <a href="mailto:wfu30487@usc.edu">Email</a> <span class="sep">/</span>
       <a href="https://scholar.google.com/citations?user=vVaJlGUAAAAJ&amp;hl=en">Google&nbsp;Scholar</a> <span class="sep">/</span>
@@ -134,7 +135,7 @@
 
 <h2>News</h2>
 <ul class="news">
-  <li><span class="date">Oct 2026</span><span>Our paper on the fractional dynamics of LLM hidden states, <i>The Dynamics Beneath Language</i>, is under review.</span></li>
+  <li><span class="date">Oct 2026</span><span><i>The Dynamics Beneath Language</i> is under review.</span></li>
   <li><span class="date">Mar 2026</span><span>Completed the full Los Angeles Marathon! 🏃</span></li>
   <li><span class="date">Feb 2026</span><span>Joined Prof. Paul Bogdan's group at USC as a graduate researcher.</span></li>
   <li><span class="date">Aug 2025</span><span>Started my MS in Electrical Engineering at USC.</span></li>
@@ -168,25 +169,27 @@
 <div class="entry">
   <div class="head"><span class="what">University of Southern California</span><span class="when">Feb 2026 – Present</span></div>
   <div class="where">Graduate Researcher, advised by Prof. Paul Bogdan</div>
-  <p class="desc"><b>Predicting false consensus in LLM multi-agent systems.</b> Co-first author of TF-Risk (with Prof. Yorie Nakahira, CMU), which forecasts confident-but-incorrect majority decisions before commitment by modeling report arrivals as a time-fractional renewal process, using only early report counts. Ran the orchestrator–worker evaluations (Qwen3-4B, Phi-4-mini; MMLU, ARC-Challenge) and the decision-time forecasting experiments: best AUROC and AUARC in all four settings, and 74% lower forecast error than the strongest temporal baseline.</p>
-  <p class="desc"><b>Fractional dynamics of LLM hidden states.</b> Led the watermark-detection study, testing whether fractional orders estimated from a single hidden-state trajectory register a decoding-time intervention (Unigram watermarking on Mistral-7B and Qwen2.5-7B). Fractional-order features achieved the highest AUROC in all 12 settings (mean 0.72 vs. 0.63 for NLL/entropy baselines). Also contributed to the human-vs-LLM experiments.</p>
-  <p class="desc"><b>Stable neural operators for long-rollout PDE prediction.</b> Ran controlled ablations across FNO, U-Net, multiwavelet, and PINN models on Kuramoto–Sivashinsky and Burgers, showing that IMEX time-splitting is the main source of long-rollout stability.</p>
+  <ul class="desc">
+    <li><b>TF-Risk:</b> forecasting false consensus in multi-agent LLM systems with time-fractional dynamics; ran the main evaluations (best AUROC in all settings).</li>
+    <li><b>Fractional dynamics of LLM hidden states:</b> led the watermark-detection study (best AUROC in all 12 settings).</li>
+    <li><b>Stable neural operators:</b> ablations showing IMEX time-splitting drives long-rollout stability.</li>
+  </ul>
 </div>
 <div class="entry">
   <div class="head"><span class="what">Digital Twin-Based Product Quality Prediction in Industrial Processes</span><span class="when">Nov 2024 – Jun 2025</span></div>
   <div class="where">Undergraduate Thesis, Northeastern University — advised by Prof. Minghai Jiao &amp; Chang Liu</div>
-  <p class="desc">Built physics-informed quality-prediction models for cold-rolling and annealing, injecting features from thermodynamic and kinetic models into XGBoost, CatBoost, and TabTransformer; tuned with evolutionary algorithms and built an interactive Unity digital-twin interface.</p>
+  <p class="desc">Physics-informed quality prediction for cold rolling and annealing (R² &gt; 0.95), with a Unity digital-twin interface.</p>
 </div>
 <div class="entry">
   <div class="head"><span class="what">Intelligent Monitoring System for School-Bullying Detection</span><span class="when">Jan 2022 – Sep 2023</span></div>
   <div class="where">Team Leader, Northeastern University — advised by Prof. Dongyue Chen</div>
-  <p class="desc">Built a real-time multi-target tracking pipeline (YOLOv5 + DeepSORT) to detect harmful interactions in crowded school environments; deployed across heterogeneous school camera systems with real-time alerts.</p>
+  <p class="desc">Real-time YOLOv5 + DeepSORT tracking pipeline for detecting harmful interactions on school cameras.</p>
 </div>
 <h2>Industry Experience</h2>
 <div class="entry">
   <div class="head"><span class="what">Jifeng Geological Exploration</span><span class="when">Jun 2022 – Sep 2022</span></div>
   <div class="where">Data Engineer Intern</div>
-  <p class="desc">Trained random-forest and SVM classifiers for lithology classification on remote-sensing, seismic, and well-log data to support mineral-resource zoning.</p>
+  <p class="desc">Lithology classification from multi-source geological data.</p>
 </div>
 
 <h2>Teaching</h2>
