@@ -4,46 +4,112 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Wei Fu</title>
-<meta name="description" content="Wei Fu — MS student in Electrical Engineering at USC, studying LLMs and LLM agents as dynamical systems.">
+<meta name="description" content="Wei Fu — MS student in Electrical Engineering at USC. Research: fractional-order dynamics of LLMs and multi-agent LLM systems, neural operators, learning-based control.">
 <meta name="author" content="Wei Fu">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>W</text></svg>">
 <style>
-  :root { --bg: #fff; --text: #1f1f1f; --muted: #6b6f75; --link: #14508c; --rule: #e6e6e6; }
+  :root {
+    --bg: #ffffff;
+    --text: #1f1f1f;
+    --muted: #5f6368;
+    --link: #14508c;
+    --rule: #e3e3e3;
+    --highlight: #f6f4ee;
+  }
   @media (prefers-color-scheme: dark) {
-    :root { --bg: #16181c; --text: #dcdfe3; --muted: #9aa0a6; --link: #7fb0e0; --rule: #33373d; }
+    :root {
+      --bg: #16181c;
+      --text: #dcdfe3;
+      --muted: #9aa0a6;
+      --link: #7fb0e0;
+      --rule: #33373d;
+      --highlight: #1e2126;
+    }
   }
   * { box-sizing: border-box; }
   html { -webkit-text-size-adjust: 100%; }
   body {
-    margin: 0; background: var(--bg); color: var(--text);
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
     font-family: Charter, "Bitstream Charter", "Sitka Text", Cambria, Georgia, serif;
-    font-size: 17px; line-height: 1.6;
+    font-size: 17px;
+    line-height: 1.55;
   }
-  .page { max-width: 42rem; margin: 0 auto; padding: 4rem 1.25rem; }
+  .page {
+    max-width: 46rem;
+    margin: 0 auto;
+    padding: 3.5rem 1.5rem 4rem;
+  }
   a { color: var(--link); text-decoration: none; }
   a:hover { text-decoration: underline; }
 
-  header { display: flex; gap: 2rem; align-items: center; }
-  .intro { flex: 1; min-width: 0; }
-  h1 { font-size: 1.9rem; font-weight: 600; margin: 0 0 0.6rem; }
-  .portrait { width: 120px; height: auto; border-radius: 6px; }
-  p { margin: 0 0 0.8rem; }
-  .links { color: var(--muted); font-size: 0.95rem; }
+  /* Header */
+  header { display: flex; gap: 2rem; align-items: flex-start; }
+  .intro { flex: 1 1 auto; min-width: 0; }
+  h1 { font-size: 2rem; font-weight: 600; margin: 0 0 0.2rem; letter-spacing: 0.2px; }
+  .tagline { color: var(--muted); margin: 0 0 1rem; }
+  .portrait {
+    flex: 0 0 auto;
+    width: 165px; height: 165px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  .links { margin-top: 1rem; font-size: 0.95rem; }
+  .links a { margin-right: 0.35rem; }
+  .links span.sep { color: var(--rule); margin-right: 0.35rem; }
 
-  h2 { font-size: 1.1rem; font-weight: 600; margin: 2.5rem 0 0.8rem; }
-  .item { margin-bottom: 0.9rem; }
-  .item .t { font-weight: 600; }
-  .muted { color: var(--muted); }
+  /* Sections */
+  h2 {
+    font-size: 1.25rem; font-weight: 600;
+    margin: 2.6rem 0 0.9rem;
+    padding-bottom: 0.3rem;
+    border-bottom: 1px solid var(--rule);
+  }
+  p { margin: 0 0 0.9rem; }
+
+  /* News */
+  .news { list-style: none; margin: 0; padding: 0; }
+  .news li { display: flex; gap: 1.1rem; margin-bottom: 0.45rem; }
+  .news .date { flex: 0 0 5.2rem; color: var(--muted); font-variant-numeric: tabular-nums; }
+
+  /* Publications */
+  .pub { margin-bottom: 1.15rem; }
+  .pub .title { font-weight: 600; }
+  .pub .authors { display: block; }
+  .pub .venue { display: block; font-style: italic; color: var(--muted); }
+  .pub .plinks { font-size: 0.92rem; }
+  .pub .plinks a { margin-right: 0.6rem; }
   .me { font-weight: 600; }
-  .row { display: flex; justify-content: space-between; gap: 1rem; margin-bottom: 0.3rem; }
-  .row .muted { white-space: nowrap; }
 
-  footer { margin-top: 3rem; color: var(--muted); font-size: 0.85rem; }
+  /* Experience / education entries */
+  .entry { margin-bottom: 1.05rem; }
+  .entry .head { display: flex; justify-content: space-between; gap: 1rem; align-items: baseline; }
+  .entry .what { font-weight: 600; }
+  .entry .when { color: var(--muted); font-size: 0.92rem; white-space: nowrap; }
+  .entry .where { color: var(--muted); font-size: 0.97rem; }
+  .entry .desc { margin: 0.15rem 0 0; }
+  .entry ul.desc { padding-left: 1.2rem; }
 
-  @media (max-width: 600px) {
-    header { flex-direction: column-reverse; align-items: flex-start; gap: 1.2rem; }
-    .portrait { width: 100px; }
-    .row { flex-direction: column; gap: 0; margin-bottom: 0.6rem; }
+  .misc li { margin-bottom: 0.35rem; }
+
+  footer {
+    margin-top: 3.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--rule);
+    color: var(--muted);
+    font-size: 0.88rem;
+  }
+
+  @media (max-width: 620px) {
+    header { flex-direction: column-reverse; align-items: center; }
+    .intro h1, .intro .tagline { text-align: center; }
+    .links { text-align: center; }
+    .portrait { width: 150px; height: 150px; }
+    .news li { flex-direction: column; gap: 0; margin-bottom: 0.7rem; }
+    .news .date { flex-basis: auto; }
+    .entry .head { flex-direction: column; gap: 0; }
+    .entry .when { white-space: normal; }
   }
 </style>
 </head>
@@ -53,48 +119,106 @@
 <header>
   <div class="intro">
     <h1>Wei Fu</h1>
-    <p>I am an MS student in Electrical Engineering at USC, working with <a href="https://cps.usc.edu/">Paul Bogdan</a>. I study LLMs and LLM agents as dynamical systems: fractional-order dynamics, failure prediction in multi-agent systems, and neural operators.</p>
-    <p>Previously, I received my BEng in Automation from Northeastern University, China. I am applying to PhD programs.</p>
+    <p class="tagline">MS Student, Electrical Engineering<br>University of Southern California</p>
+    <p>I am a Master's student at the <a href="https://viterbischool.usc.edu/">USC Viterbi School of Engineering</a>, working with <a href="https://cps.usc.edu/">Prof. Paul Bogdan</a> on non-Markovian dynamics of large language models and multi-agent LLM systems. Before USC, I received my BEng in Automation from Northeastern University, China.</p>
+    <p>I study LLMs and LLM agents as dynamical systems, with interests in fractional-order dynamics, failure prediction in multi-agent systems, neural operators, and learning-based control. I am currently applying to PhD programs.</p>
     <div class="links">
-      wfu30487 [at] usc [dot] edu &nbsp;·&nbsp;
-      <a href="https://scholar.google.com/citations?user=vVaJlGUAAAAJ&amp;hl=en">Scholar</a> &nbsp;·&nbsp;
-      <a href="https://github.com/Barryway7">GitHub</a> &nbsp;·&nbsp;
-      <a href="https://www.linkedin.com/in/wei-fu-a74aaa379">LinkedIn</a>
+      <a href="mailto:wfu30487@usc.edu">Email</a> <span class="sep">/</span>
+      <a href="https://scholar.google.com/citations?user=vVaJlGUAAAAJ&amp;hl=en">Google&nbsp;Scholar</a> <span class="sep">/</span>
+      <a href="https://github.com/Barryway7">GitHub</a> <span class="sep">/</span>
+      <a href="https://www.linkedin.com/in/wei-fu-a74aaa379">LinkedIn</a> <span class="sep">/</span>
+      <a href="https://orcid.org/0009-0000-3435-805X">ORCID</a>
     </div>
   </div>
-  <img class="portrait" src="img/avatar.jpg?v=2" alt="Wei Fu">
+  <img class="portrait" src="img/avatar.jpg?v=2" alt="Portrait of Wei Fu">
 </header>
 
-<h2>Papers</h2>
-<div class="item">
-  <div class="t">TF-Risk: Estimating False-Consensus Risk in Multi-Agent Systems with Time-Fractional Dynamics</div>
-  <div>Gengshuo Liu*, <span class="me">Wei Fu</span>*, Italo Ivo Lima Dias Pinto, Yorie Nakahira, Paul Bogdan</div>
-  <div class="muted">Manuscript, 2026</div>
-</div>
-<div class="item">
-  <div class="t">The Dynamics Beneath Language: A Statistical Physics-Inspired Framework for Analyzing Large Language Models</div>
-  <div>Gengshuo Liu, Zhuoyuan Wang, Wei Yang, Xiaole Zhang, <span class="me">Wei Fu</span>, Jesse Thomason, Paul Bogdan, Yorie Nakahira</div>
-  <div class="muted">Under review</div>
-</div>
-<div class="item">
-  <div class="t">Lyapunov-Inspired Neural Operators for Stable Long-Rollout PDE Prediction</div>
-  <div>Gengshuo Liu, Shixuan Li, Xiongye Xiao, <span class="me">Wei Fu</span>, Yucheng Zhao, Paul Bogdan</div>
-  <div class="muted">In preparation</div>
-</div>
-<div class="item">
-  <div class="t">Exploratory Data Analysis and Machine Learning Models for Stroke Prediction</div>
-  <div><span class="me">Wei Fu</span></div>
-  <div class="muted">DAML 2023 · <a href="https://doi.org/10.5220/0012783300003885">DOI</a></div>
-</div>
-<p class="muted" style="font-size:0.9rem">* equal contribution</p>
+<h2>News</h2>
+<ul class="news">
+  <li><span class="date">Oct 2026</span><span><i>The Dynamics Beneath Language</i> is under review.</span></li>
+  <li><span class="date">Mar 2026</span><span>Completed the full Los Angeles Marathon! 🏃</span></li>
+  <li><span class="date">Feb 2026</span><span>Joined Prof. Paul Bogdan's group at USC as a graduate researcher.</span></li>
+  <li><span class="date">Aug 2025</span><span>Started my MS in Electrical Engineering at USC.</span></li>
+  <li><span class="date">Jun 2025</span><span>Graduated from Northeastern University with a BEng in Automation.</span></li>
+</ul>
 
-<h2>Experience</h2>
-<div class="row"><span>Graduate Researcher, USC (Paul Bogdan)</span><span class="muted">2026 –</span></div>
-<div class="row"><span>Undergraduate Researcher, Northeastern University</span><span class="muted">2022 – 2025</span></div>
-<div class="row"><span>Team Leader, <a href="https://github.com/Barryway7/Anti-bullying-System">School-Bullying Detection</a></span><span class="muted">2022 – 2023</span></div>
-<div class="row"><span>Data Engineer Intern, Jifeng Geological Exploration</span><span class="muted">2022</span></div>
+<h2>Publications &amp; Preprints</h2>
+<div class="pub">
+  <span class="title">TF-Risk: Estimating False-Consensus Risk in Multi-Agent Systems with Time-Fractional Dynamics</span>
+  <span class="authors">Gengshuo Liu*, <span class="me">Wei Fu*</span>, Italo Ivo Lima Dias Pinto, Yorie Nakahira, Paul Bogdan &nbsp;<span style="color:var(--muted)">(*equal contribution)</span></span>
+  <span class="venue">Manuscript, 2026</span>
+</div>
+<div class="pub">
+  <span class="title">The Dynamics Beneath Language: A Statistical Physics-Inspired Framework for Analyzing Large Language Models</span>
+  <span class="authors">Gengshuo Liu, Zhuoyuan Wang, Wei Yang, Xiaole Zhang, <span class="me">Wei Fu</span>, Jesse Thomason, Paul Bogdan, Yorie Nakahira</span>
+  <span class="venue">Under review</span>
+</div>
+<div class="pub">
+  <span class="title">Lyapunov-Inspired Neural Operators for Stable Long-Rollout PDE Prediction</span>
+  <span class="authors">Gengshuo Liu, Shixuan Li, Xiongye Xiao, <span class="me">Wei Fu</span>, Yucheng Zhao, Paul Bogdan</span>
+  <span class="venue">In preparation</span>
+</div>
+<div class="pub">
+  <span class="title">Exploratory Data Analysis and Machine Learning Models for Stroke Prediction</span>
+  <span class="authors"><span class="me">Wei Fu</span></span>
+  <span class="venue">International Conference on Data Analysis and Machine Learning (DAML), 2023</span>
+  <span class="plinks"><a href="https://doi.org/10.5220/0012783300003885">DOI</a></span>
+</div>
 
-<footer>Last updated October 2026</footer>
+<h2>Research Experience</h2>
+<div class="entry">
+  <div class="head"><span class="what">University of Southern California</span><span class="when">Feb 2026 – Present</span></div>
+  <div class="where">Graduate Researcher, advised by Prof. Paul Bogdan</div>
+  <ul class="desc">
+    <li><b>TF-Risk:</b> forecasting false consensus in multi-agent LLM systems with time-fractional dynamics; ran the main evaluations (best AUROC in all settings).</li>
+    <li><b>Fractional dynamics of LLM hidden states:</b> led the watermark-detection study (best AUROC in all 12 settings).</li>
+    <li><b>Stable neural operators:</b> ablations showing IMEX time-splitting drives long-rollout stability.</li>
+  </ul>
+</div>
+<div class="entry">
+  <div class="head"><span class="what">Digital Twin-Based Product Quality Prediction in Industrial Processes</span><span class="when">Nov 2024 – Jun 2025</span></div>
+  <div class="where">Undergraduate Thesis, Northeastern University — advised by Prof. Minghai Jiao &amp; Chang Liu</div>
+  <p class="desc">Physics-informed quality prediction for cold rolling and annealing (R² &gt; 0.95), with a Unity digital-twin interface.</p>
+</div>
+<div class="entry">
+  <div class="head"><span class="what">Intelligent Monitoring System for School-Bullying Detection</span><span class="when">Jan 2022 – Sep 2023</span></div>
+  <div class="where">Team Leader, Northeastern University — advised by Prof. Dongyue Chen</div>
+  <p class="desc">Real-time YOLOv5 + DeepSORT tracking pipeline for detecting harmful interactions on school cameras.</p>
+</div>
+<h2>Industry Experience</h2>
+<div class="entry">
+  <div class="head"><span class="what">Jifeng Geological Exploration</span><span class="when">Jun 2022 – Sep 2022</span></div>
+  <div class="where">Data Engineer Intern</div>
+  <p class="desc">Lithology classification from multi-source geological data.</p>
+</div>
+
+<h2>Teaching</h2>
+<div class="entry">
+  <div class="head"><span class="what">Undergraduate Teaching Assistant, Computer DIY &amp; Maintenance</span><span class="when">Spring 2024</span></div>
+  <div class="where">Northeastern University</div>
+</div>
+
+<h2>Education</h2>
+<div class="entry">
+  <div class="head"><span class="what">University of Southern California</span><span class="when">Aug 2025 – May 2027 (expected)</span></div>
+  <div class="where">MS in Electrical Engineering, Viterbi School of Engineering</div>
+</div>
+<div class="entry">
+  <div class="head"><span class="what">Northeastern University, China</span><span class="when">Sep 2021 – Jun 2025</span></div>
+  <div class="where">BEng in Automation — GPA 3.71/4.0</div>
+</div>
+
+<h2>Miscellaneous</h2>
+<ul class="misc">
+  <li><b>Awards:</b> First-Class Scholarship, Northeastern University (2023); Outstanding Student Award, Northeastern University (2023); First Prize, Liaoning Mathematics Competition (2022)</li>
+  <li><b>Programming:</b> Python (PyTorch, NumPy/SciPy, scikit-learn, vLLM), MATLAB/Simulink, C++</li>
+  <li><b>Tools:</b> Git, Docker, Linux, Unity</li>
+  <li><b>Hardware:</b> <a href="https://github.com/Barryway7/motion-sensing-robotic-arm">Motion-sensing robotic arm</a> — a wearable exoskeleton glove teleoperating a 6-DOF arm in real time (STM32 + MPU6050, 2022)</li>
+</ul>
+
+<footer>
+  © 2026 Wei Fu · Last updated October 2026
+</footer>
 
 </div>
 </body>
